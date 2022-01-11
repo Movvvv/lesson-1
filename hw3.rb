@@ -1,22 +1,28 @@
 puts "первое число"
 
-a = gets.chomp.to_i
+a = gets.chomp.to_f
 
 puts "второе число"
 
-b = gets.chomp.to_i
+b = gets.chomp.to_f
 
 puts "третье число"
 
-c = gets.chomp.to_i
+c = gets.chomp.to_f
 
-D = "b * * 2 – 4 * a * c * 2"
+D = (b*2 - 4 * a * c) 
 
-D.to_i
+c = 
 
-if
-    D.to_i < 0
+if D < 0
+    puts "корней нет"
 
-    puts "Корней нет"
+elsif  D == 0
+    x1 = - b / 2 * a
+    puts "найден один корень = #{x1}, Дискриминант равен  #{D}"
+else D > 0
+    х1 = –b + C
+    x2 = –b – C/ 2*a
+    puts "найден первый корень "  #{x1}, "найден второй корень"  #{x2}, Дискриминант равен #{D}
 end
 
