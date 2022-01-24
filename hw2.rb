@@ -1,5 +1,10 @@
 puts "Какого основание треугольника"
-a = gets.chomp
+
+a = gets.chomp.to_f
+
 puts "Какова высота треугольника"
-h = gets.chomp
-puts "#{1.to_i/2.to_i * a.to_i * h.to_i} площадь теугольника равна"
+
+h = gets.chomp.to_f
+
+puts "площадь теугольника равна #{1 / 2 * a * h}"
+result = (1 / 2 * a * h)
